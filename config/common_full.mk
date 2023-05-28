@@ -1,5 +1,5 @@
-# Inherit common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mobile.mk)
+# Inherit common Medusa stuff
+$(call inherit-product, vendor/medusa/config/common_mobile.mk)
 
 PRODUCT_SIZE := full
 
@@ -17,7 +17,3 @@ PRODUCT_PACKAGES += \
     fonts_customization.xml \
     FontLatoOverlay \
     FontRubikOverlay
-
-# Recorder
-PRODUCT_PACKAGES += \
-    Recorder
