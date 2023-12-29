@@ -19,26 +19,25 @@ device_repos=(
   device/google/raviole
 )
 
-# Need OTA zip for firmware, not supported by image_unpacker yet
-readonly needs_ota=true
+readonly fbpk_version="v2"
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="TQ2A.230505.002"
+readonly build_id="TQ3A.230901.001"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly prev_aosp_tag="android-13.0.0_r41"
-readonly aosp_tag="android-13.0.0_r43"
+readonly prev_aosp_tag="android-13.0.0_r67"
+readonly aosp_tag="android-13.0.0_r75"
 
-readonly build_number="9891397"
+readonly build_number="10750268"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/raven-tq2a.230505.002-factory-953c94d1.zip"
-readonly image_sha256="953c94d144ea4510c60f9511145fc63b6809e9a3799eca3446f375aeadac2d4c"
+readonly image_url="https://dl.google.com/dl/android/aosp/raven-tq3a.230901.001-factory-5917d34f.zip"
+readonly image_sha256="5917d34f251c8094b0db034127220a9244acf13559f16e929f83288de4545453"
 
-readonly flash_url="https://flash.android.com/build/9891397?target=raven-user&signed"
+readonly flash_url="https://flash.android.com/build/10750268?target=raven-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-tq2a.230505.002-95987a37.zip"
-readonly ota_sha256="95987a37457f23c4f6d5ca8fc0e77bdb2b4d6e96c4da87aeb16c958038037e1c"
+readonly ota_url="https://dl.google.com/dl/android/aosp/raven-ota-tq3a.230901.001-16187f60.zip"
+readonly ota_sha256="16187f604421f90baeb73ddeb04c12328ffe8dd664fd25cb39b8324d25f4a0a5"
 
-readonly security_patch="2023-05-05"
+readonly security_patch="2023-09-01"

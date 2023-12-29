@@ -11,6 +11,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/medusa/overlay/dictionaries
 
 # Enable support of one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.support_one_handed_mode=true
+    ro.support_one_handed_mode?=true
 
 $(call inherit-product, vendor/medusa/config/telephony.mk)
